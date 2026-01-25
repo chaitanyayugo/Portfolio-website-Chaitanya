@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Chaitanya Srivastava — Portfolio</title>
+  <meta name="description" content="Portfolio of Chaitanya Srivastava. Projects in web, data, ML and more." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#hero">Chaitanya Srivastava</a>
+      <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">☰</button>
+      <nav id="nav" class="nav">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <a class="btn" href="resume.pdf" download>Download Resume</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="hero">
+      <div class="container hero-inner">
+        <h1>Hi — I'm <span class="accent">Chaitanya</span></h1>
+        <p class="lead">MCA postgraduate · Software, Data & Web · Building projects for my GitHub portfolio</p>
+        <div class="hero-actions">
+          <a class="btn" href="#projects">See Projects</a>
+          <a class="btn ghost" href="resume.pdf" download>Download Resume</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section container">
+      <h2>About</h2>
+      <div class="about-grid">
+        <div>
+          <p>
+            I’m an MCA postgraduate learning full-stack development, data analysis, and automation.
+            I build small projects to grow my GitHub portfolio and learn tools used in industry.
+          </p>
+          <ul>
+            <li>Languages: Python, C, C++, JavaScript</li>
+            <li>Frameworks: React, Django</li>
+            <li>Databases: SQL, MongoDB</li>
+          </ul>
+        </div>
+        <div class="skills-card">
+          <h3>Contact</h3>
+          <p>Email: <a href="mail to:chaitanyayugo@gmail.com">chaitanyayugo@gmail.com</a></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section container">
+      <h2>Projects</h2>
+      <p class="muted">Selected beginner → intermediate projects. Click a project to open its repo (. link. ).</p>
+
+      <div class="projects-grid">
+        <article class="card">
+          <h3>React To-Do App</h3>
+          <p>Small single-page app with localStorage and filters.</p>
+          <a class="link" href="https://github.com/Chaitanya/react-todo" target="_blank" rel="noopener">View repo →</a>
+        </article>
+
+        <article class="card">
+          <h3>Power BI Sales Dashboard</h3>
+          <p>Interactive dashboard with regional KPIs and trends.</p>
+          <a class="link" href="https://github.com/Chaitanya/powerbi-sales-dashboard" target="_blank" rel="noopener">View repo →</a>
+        </article>
+
+        <article class="card">
+          <h3>Notes API (Django)</h3>
+          <p>RESTful API with CRUD endpoints and JWT auth.</p>
+          <a class="link" href="https://github.com/Chaitanya/notes-django" target="_blank" rel="noopener">View repo →</a>
+        </article>
+
+        <!-- Add more cards as you publish repos -->
+      </div>
+    </section>
+
+    <section id="contact" class="section container">
+      <h2>Contact</h2>
+      <p class="muted">Send me a message — this form posts to Formspree (no server needed). See instructions in README.</p>
+
+      <!-- Replace the action URL with your Formspree endpoint (or remove action to use mailto fallback) -->
+      <form id="contact-form" class="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
+        <label>
+          <span>Name</span>
+          <input type="text" name="name" required />
+        </label>
+        <label>
+          <span>Email</span>
+          <input type="email" name="email" required />
+        </label>
+        <label>
+          <span>Message</span>
+          <textarea name="message" rows="6" required></textarea>
+        </label>
+        <div class="form-actions">
+          <button type="submit" class="btn">Send Message</button>
+          <button type="button" id="contact-mailto" class="btn ghost">Email instead</button>
+        </div>
+
+        <p id="form-status" class="muted" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Chaitanya Srivastava — <a href="https://github.com/YOUR_USERNAME">GitHub</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
